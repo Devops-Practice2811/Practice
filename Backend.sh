@@ -1,4 +1,5 @@
 dnf module disable nodejs -y &>>/tmp/expense.log
+echo dnf installed
 dnf module enable nodejs:20 -y &>>/tmp/expense.log
 dnf install nodejs -y &>>/tmp/expense.log
 useradd expense &>>/tmp/expense.log
