@@ -1,5 +1,6 @@
 dnf module disable nodejs -y &>>/tmp/expense.log
 echo dnf installed
+MySql_Root_Password =$0
 dnf module enable nodejs:20 -y &>>/tmp/expense.log
 dnf install nodejs -y &>>/tmp/expense.log
 useradd expense &>>/tmp/expense.log
@@ -16,4 +17,4 @@ systemctl enable backend &>>/tmp/expense.log
 systemctl start backend &>>/tmp/expense.log
 
 dnf install mysql -y &>>/tmp/expense.log
-mysql -h 172.31.41.140 -uroot -pExpenseApp@1 < /app/schema/backend.sql &>>/tmp/expense.log
+mysql -h 172.31.41.140 -uroot -p${MySql_Root_Password} < /app/schema/backend.sql &>>/tmp/expense.log
