@@ -1,7 +1,7 @@
 dnf module disable nodejs -y &>>/tmp/expense.log
 echo $?
 echo dnf installed
-MySql_Root_Password =$0
+MySql_Root_Password =$1
 echo $?
 
 dnf module enable nodejs:20 -y &>>/tmp/expense.log
