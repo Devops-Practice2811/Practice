@@ -10,6 +10,6 @@ cd /app
 unzip /tmp/backend.zip
 cd /app
 npm install
-systemctl daemon-reloa
+systemctl daemon-reload
 systemctl enable backend
 systemctl start backend
