@@ -1,3 +1,5 @@
+Source Common.sh
+
 Password="$1"
 if [ -z "${Password}" ]; then
   echo input is missing
