@@ -3,7 +3,7 @@ Print_task_Heading(){
 }
 
 Check_Status(){
-  iif [ $1 -eq 0 ]; then
+  if [ $1 -eq 0 ]; then
    echo “Sucess""
    else
    echo “Failure”
