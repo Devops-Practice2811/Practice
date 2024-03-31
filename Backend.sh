@@ -1,4 +1,9 @@
 Password="$1"
+if [-z ${Password}]; then
+  echo input is missing
+  exit 1
+ fi
+
 Print_task_Heading(){
   echo "############ $1 #########" &>> tmp/expense.log
 
