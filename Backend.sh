@@ -1,4 +1,4 @@
-Source Common.sh
+source Common.sh
 
 Password="$1"
 if [ -z "${Password}" ]; then
