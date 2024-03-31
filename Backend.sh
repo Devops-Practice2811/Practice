@@ -1,4 +1,4 @@
-MySql_Root_Password =$1
+MySql_Root_Password = $1
 dnf module disable nodejs -y &>>/tmp/expense.log
 echo $?
 echo dnf installed
