@@ -4,8 +4,8 @@ Print_task_Heading(){
 
 Check_Status(){
   if [ $1 -eq 0 ]; then
-   echo “Sucess""
+   echo Sucess
    else
-   echo “Failure”
+   echo Failure
    fi
 }
