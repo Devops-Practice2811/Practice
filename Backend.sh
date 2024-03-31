@@ -1,4 +1,4 @@
-
+Password="$1"
 Print_task_Heading(){
   echo "############ $1 #########" &>> tmp/expense.log
 
@@ -56,5 +56,5 @@ dnf install mysql -y &>>/tmp/expense.log
 echo $?
 
 Print_task_Heading "Proving root password"
-mysql -h 172.31.41.140 -uroot -pExpenseApp@1 < /app/schema/backend.sql &>>/tmp/expense.log
+mysql -h 172.31.41.140 -uroot -p${Password} < /app/schema/backend.sql &>>/tmp/expense.log
 echo $?
