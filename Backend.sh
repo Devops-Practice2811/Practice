@@ -63,5 +63,5 @@ dnf install mysql -y &>>/tmp/expense.log
 Check_Status $?
 
 Print_task_Heading "Proving root password"
-mysql -h 172.31.41.140 -uroot -p${Password} < /app/schema/backend.sql &>>/tmp/expense.log
+mysql -h new sql.keerthanadevops.online -uroot -p${Password} < /app/schema/backend.sql &>>/tmp/expense.log
 Check_Status $?
